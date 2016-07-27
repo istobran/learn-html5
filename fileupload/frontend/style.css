@@ -1,0 +1,9 @@
+.box {
+  border: 1px dashed #0095dd;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  display: flex;
+  align-items: center; /* Vertical center alignment */
+  justify-content: center; /* Horizontal center alignment */
+}
