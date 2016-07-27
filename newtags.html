@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML5新增标签</title>
+  </head>
+  <body>
+    <!-- SEO语义化标签 -->
+    <article>文章</article>
+    <aside>边栏</aside>
+    <header>头部</header>
+    <section>段落</section>
+    <footer>尾部</footer>
+    <main>主要内容</main>
+    <nav>导航栏</nav>
+    <hgroup>
+      标题组
+      <h1>标题一</h1>
+      <h2>标题二</h2>
+    </hgroup>
+    <figure>
+      流媒体
+      <figcaption>流媒体标题</figcaption>
+      <img src="1.jpg" alt="图片流" />
+    </figure>
+    <!-- 功能性标签 -->
+    <meter min="200" max="500" value="350"></meter><!-- not support in IE -->
+    <progress value="50" max="100">50%</progress>
+    <menu type="context" id="mymenu">    <!-- firefox only -->
+      <menuitem label="Refresh" onclick="window.location.reload();" icon="ico_reload.png">
+      </menuitem>
+      <menu label="Share on...">
+        <menuitem label="Twitter" icon="ico_twitter.png"
+        onclick="window.open('//twitter.com/intent/tweet?text='+window.location.href);">
+        </menuitem>
+        <menuitem label="Facebook" icon="ico_facebook.png"
+        onclick="window.open('//facebook.com/sharer/sharer.php?u='+window.location.href);">
+        </menuitem>
+      </menu>
+      <menuitem label="Email This Page"
+      onclick="window.location='mailto:?body='+window.location.href;"></menuitem>
+    </menu>
+    <audio src="1.mp3">
+      音乐控件
+    </audio>
+    <video src="videofile.ogg" autoplay poster="posterimage.jpg">
+      视频控件
+    </video>
+    <canvas id="canvas" width="300" height="300">
+      画布控件
+    </canvas>
+    <svg>
+      矢量图控件
+    </svg>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML5表单测试</title>
+  </head>
+  <body>
+    <!-- 新增输入元素类型 -->
+    <form name="myform" class="myform" action="index.html" method="post">
+      颜色：<input type="color" name="color"><br>
+      URL地址：<input type="url" name="url"><br>
+      日期：<input type="date" name="date"><br>
+      搜索：<input type="search" name="search" result="s"><br>
+      邮箱：<input type="email" name="email"><br>
+      电话：<input type="tel" name="tel"><br>
+      第几周：<input type="week" name="week"><br>
+      时间：<input type="time" name="time"><br>
+      月份：<input type="month" name="month"><br>
+      范围：<input type="range" max="10" min="4" step="2"><br>
+      数值：<input type="number" max="10" min="1"><br>
+      UTC时间：<input type="datetime" name="datetime"><br>
+      本地时间：<input type="datetime-local" name="datetime-local"><br>
+    </form>
+    <!-- 新增属性 -->
+    <form class="myform2" action="index.html" method="post">
+      ID号：<input type="text" name="userid" value="10001" readonly="true"><br>
+      用户名：<input type="text" name="name" value="" required autofocus="autofocus"><br>    <!-- 不能为空 -->
+      密码：<input type="password" name="pwd" pattern="[A-Za-z]{6,15}" maxlength="15" autocomplete="false"><br>    <!-- 模式匹配 -->
+      <input type="submit" name="sm1" value="提交到默认表单"><br>
+      <input type="submit" name="sm2" value="提交到其他地方" formaction="2.html" formmethod="get"><br>
+      <input type="submit" name="sm2" value="不允许提交的按钮" disabled="disabled"><br>
+      <p contenteditable>
+        这段文字可以直接被修改
+      </p>
+    </form>
+  </body>
+</html>
