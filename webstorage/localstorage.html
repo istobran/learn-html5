@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>localStorage测试</title>
+  </head>
+  <body>
+    <form name="myform" action="index.html" method="post">
+      <table>
+        <tr>
+          <td>
+            <label for="receiver">收件人</label>
+          </td>
+          <td>
+            <input id="receiver" type="text" name="receiver" placeholder="example@example.com" style="width:100%">
+          </td>
+        </tr>
+        <tr>
+          <td><label for="copy_recv">抄送</label></td>
+          <td><input id="copy_recv" type="text" name="copy_recv" style="width:100%"></td>
+        </tr>
+        <tr>
+          <td><label for="title">标题</label></td>
+          <td><input id="title" type="text" name="title" placeholder="请输入文章的标题" style="width:100%"></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <textarea id="content" name="content" rows="12" cols="40" style="width:100%"></textarea>
+          </td>
+        </tr>
+        <td>
+          <button type="reset" name="reset">重置</button>
+          <button type="submit" name="submit">发送</button>
+        </td>
+      </table>
+    </form>
+    <script type="text/javascript" src="localStorage.js"></script>
+  </body>
+</html>
