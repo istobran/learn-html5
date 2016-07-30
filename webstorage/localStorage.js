@@ -39,3 +39,13 @@
     localStorage.clear();
   });
 })();
+/*
+  在webStorage出现以前，使用Cookie来在客户端存储数据
+  Cookie 的存储大小限制为 4K，而且安全性设计不合理
+  cookie 在每次访问页面时，都会作为http请求头，与http请求一并提交
+  webStorage 的安全性设计相对来说得到了提升
+  localStorage 与 sessionStorage 都是本地存储，访问页面时不会与http请求一起提交
+  webStorage 的存储大小限制一般为 5M
+  localStorage 的生命周期是永久的，只要不被清除，就会一直保存在本地
+  sessionStorage 的生命周期是一次浏览器会话，会话结束后会自动销毁
+*/

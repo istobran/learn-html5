@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>sessionStorage测试</title>
+    <style media="screen">
+      main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p id="hint">
+        请刷新 10 次本页面来完成测试（可以在不同标签下测试）
+      </p>
+      <progress id="progress" value="0" max="100"></progress>
+      <button id="reset_progress" type="button">重置</button>
+    </main>
+    <script type="text/javascript" src="sessionStorage.js" charset="utf-8"></script>
+  </body>
+</html>
