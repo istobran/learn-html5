@@ -1,0 +1,9 @@
+.mainbox {
+  border: 1px solid red;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+}
+.image {
+  margin: 20px;
+}

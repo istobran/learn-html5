@@ -1,0 +1,16 @@
+CACHE MANIFEST
+# v1.01
+
+# 缓存文件列表
+CACHE:
+index.html
+style.css
+main.js
+
+# 非缓存文件列表
+NETWORK:
+beauty.jpg
+
+# 备份页面列表
+FALLBACK:
+# index.html  temp.html
