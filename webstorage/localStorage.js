@@ -48,4 +48,6 @@
   webStorage 的存储大小限制一般为 5M
   localStorage 的生命周期是永久的，只要不被清除，就会一直保存在本地
   sessionStorage 的生命周期是一次浏览器会话，会话结束后会自动销毁
+  对于 globalStorage ，事实上是FireFox下早期的本地存储解决方案
+  现在官方已经明确声明弃用 globalStorage，而使用 localStorage 进行取代
 */
